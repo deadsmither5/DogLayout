@@ -12,3 +12,22 @@ tar -xvzf datasets.tar.gz
 
 PubLayNet: Download the labels.tar.gz and decompress to ./dataset/publaynet-max25/raw folder.  
 Rico: Download the rico_dataset_v0.1_semantic_annotations.zip and decompress to ./dataset/rico25-max25/raw folder.  
+
+## Training 
+For PubLayNet:
+```
+python train_all.py --dataset publaynet --experiment all --device cuda:0 --G_d_model  512 --G_nhead 8 --G_num_layers  4 --D_d_model  512 --D_nhead  8 --D_num_layers  4 --num_timesteps  8 --latent_dim  4 --num_label  6
+```
+For Rico:
+```
+python train_all.py --dataset rico25 --experiment all --device cuda:0 --G_d_model  512 --G_nhead  8 --G_num_layers  4 --D_d_model  512 --D_nhead  8 --D_num_layers  4 --num_timesteps  8 --latent_dim  4 --num_label  26 
+```
+## Testing
+For PubLayNet:
+```
+python test.py --dataset publaynet --experiment all --device cuda:0 --G_d_model  512 --G_nhead  8 --G_num_layers  4 --D_d_model  512 --D_nhead  8 --D_num_layers  4 --num_timesteps  8 --latent_dim  4 --num_label  6 
+```
+For Rico:
+```
+python test.py --dataset rico25 --experiment all --device cuda:0 --G_d_model  512 --G_nhead  8 --G_num_layers  4 --D_d_model  512 --D_nhead  8 --D_num_layers  4 --num_timesteps  8 --latent_dim  4 --num_label  26 
+```
