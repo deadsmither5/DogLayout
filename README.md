@@ -10,8 +10,8 @@ wget https://huggingface.co/datasets/puar-playground/LACE/resolve/main/datasets.
 tar -xvzf datasets.tar.gz
 ```
 
-PubLayNet: Download the labels.tar.gz and decompress to ./dataset/publaynet-max25/raw folder.  
-Rico: Download the rico_dataset_v0.1_semantic_annotations.zip and decompress to ./dataset/rico25-max25/raw folder.  
+PubLayNet: Decompress the labels.tar.gz to ./dataset/publaynet-max25/raw folder.  
+Rico: Decompress the rico_dataset_v0.1_semantic_annotations.zip to ./dataset/rico25-max25/raw folder.  
 
 ## Training 
 For PubLayNet:
