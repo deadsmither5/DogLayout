@@ -5,8 +5,10 @@ Visualization of DogLayout's inference process. During inference, we first obtai
 DogLayout (Denoising Diffusion GAN Layout model), which integrates a diffusion process into GANs to enable the generation of discrete label data and significantly reduce diffusion’s sampling time.
 ## Dataset
 The datasets are available at: 
-```wget https://huggingface.co/datasets/puar-playground/LACE/resolve/main/datasets.tar.gz 
+```
+wget https://huggingface.co/datasets/puar-playground/LACE/resolve/main/datasets.tar.gz 
 tar -xvzf datasets.tar.gz
+```
 
 PubLayNet: Download the labels.tar.gz and decompress to ./dataset/publaynet-max25/raw folder.
 Rico: Download the rico_dataset_v0.1_semantic_annotations.zip and decompress to ./dataset/rico25-max25/raw folder.  
